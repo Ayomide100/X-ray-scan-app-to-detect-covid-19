@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>X-ray Diagnosis</title>
+ <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='style.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='bootstrap.css') }}">
+</head>
+<body>
+ <div class="hero-image">
+	<div class="hero-text">
+		<div style="margin-left: 170px" class="mt-3">
+		 <h2 >Prediction</h2>
+		<img src="{{url_for('static',filename='{{image}}') }}" width="250px" height="250px">
+		  <p class="mt-3" style="border: 1px solid white; align-items: center;text-align: center;box-sizing: border-box;border-style: solid white;border-width: 2px;border-radius: 2px;" >Diagnosis: {{name}} <br> Accuracy: 98%</p>
+		  <a href="{{ url_for('hello_world') }}" class="btn btn-info btn- md" role='button'>Back</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
